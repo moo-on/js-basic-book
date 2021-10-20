@@ -10,6 +10,15 @@
 <body>	
 	<button class="btn" onclick="calc()">나이 계산하기</button>
 	<div id="result" class="show">(결과 값 표시)</div>
+	<script>
+		function calc(){
+			var currentYear = 2021;
+			var birthYear = prompt("당신의 나이는?","YYYY");
+			var age;
+			age = currentYear - birthYear + 1;
+			document.querySelector("#result").innerHTML = "당신의 나이는" + age;
+		}
+	</script>
 
 </body>
 </html>
